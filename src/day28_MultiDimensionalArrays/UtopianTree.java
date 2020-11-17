@@ -1,25 +1,38 @@
 package day28_MultiDimensionalArrays;
 
+import java.util.Arrays;
+
 public class UtopianTree {
     public static void main(String[] args) {
 
-     //   int[] year = {1, 3, 4, 5, 6, 7, 8, 9, 10}; // 10
-    //    int[] growthPerYear = {1, 2, 3, 5, 7, 8, 10, 12, 14}; // 9
+        int year = 1;
+        int growthPerYear = 0;
+        int totalSize =0;
+
+        for( year=1; year <=10; year++){
+            if(year<=3){
+                growthPerYear = 1;
+            }else{
+                growthPerYear= 2;
+            }
+           totalSize += growthPerYear;
+            System.out.println("year " + year + " - growth " + growthPerYear + " cm");
+            System.out.println("tree size: " + totalSize + " cm");
+        }
 
 
-   //     for (int each : year) {
-      //      each++;
-
-      //      for (int each2 : growthPerYear) {
-        //        each2++;
 
 
-         //       System.out.print(" year " + each + " - growth " + each2 + " cm");
-
-         //   }
-     //   }
     }
 }
+
+
+
+
+
+
+
+
 /*
 The Utopian Tree grows exactly 1 cm for the first three years, and after that it grows by 2 cm every year,
 this is a simple implementation of the algorithm. You will need to use loops to create it.
